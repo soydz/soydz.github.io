@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: #052227;
+}
+
+.header {
+	background-image: url(https://cdn.pixabay.com/photo/2018/01/23/11/28/water-3101241_960_720.jpg);
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+	height: 100vh;
+}
+
+.header__p {
+	position: absolute;
+	color: #fff;
+	background: none;
+	font-size: 6rem;
+	right: 12%;
+	bottom: 10%;
+	font-family: 'Playfair Display SC', serif;
+}
+
+@media(max-width: 600px){
+	.header__p {
+		position: static;
+		font-size: 5rem;
+		right: 0;
+		bottom: 0;
+		text-align: center;
+		padding-top: 90%;
+	}
+}
+
+@media(max-width: 450px){
+	.header__p {
+		font-size: 3.5rem;
+		padding-top: 120%;
+	}
+}
